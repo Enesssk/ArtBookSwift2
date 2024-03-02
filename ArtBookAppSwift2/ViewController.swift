@@ -97,6 +97,46 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Arts")
+            let idString = idArray[indexPath.row].uuidString
+            fetch.predicate = NSPredicate(format: "id= %@", idString)
+            fetch.returnsObjectsAsFaults = false
+            
+            do {
+                let results = try context.fetch(fetch)
+                if results.count > 0 {
+                    for result in results as! [NSManagedObject] {
+                        if let id = result.value(forKey: "id") as? UUID {
+                            if id == idArray[indexPath.row] {
+                                context.delete(result)
+                                nameList.remove(at: indexPath.row)
+                                idArray.remove(at: indexPath.row)
+                                self.tableView.reloadData()
+                                
+                                do{
+                                    try context.save()
+                                }catch{
+                                    print("error")
+                                }
+                            }
+                        }
+                    }
+                }
+            }catch {
+                print("error delete!")
+            }
+            
+            
+            
+            
+        }
+    }
+    
    
 
 
