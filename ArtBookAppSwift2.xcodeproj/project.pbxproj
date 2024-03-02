@@ -17,6 +17,7 @@
 		DEB4A3692B93379900945AC1 /* ArtBookAppSwift2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4A3682B93379900945AC1 /* ArtBookAppSwift2Tests.swift */; };
 		DEB4A3732B93379900945AC1 /* ArtBookAppSwift2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4A3722B93379900945AC1 /* ArtBookAppSwift2UITests.swift */; };
 		DEB4A3752B93379900945AC1 /* ArtBookAppSwift2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4A3742B93379900945AC1 /* ArtBookAppSwift2UITestsLaunchTests.swift */; };
+		DEB4A3822B9338F900945AC1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4A3812B9338F900945AC1 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DEB4A36E2B93379900945AC1 /* ArtBookAppSwift2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtBookAppSwift2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB4A3722B93379900945AC1 /* ArtBookAppSwift2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtBookAppSwift2UITests.swift; sourceTree = "<group>"; };
 		DEB4A3742B93379900945AC1 /* ArtBookAppSwift2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtBookAppSwift2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DEB4A3812B9338F900945AC1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				DEB4A35C2B93379900945AC1 /* LaunchScreen.storyboard */,
 				DEB4A35F2B93379900945AC1 /* Info.plist */,
 				DEB4A3572B93379800945AC1 /* ArtBookAppSwift2.xcdatamodeld */,
+				DEB4A3812B9338F900945AC1 /* DetailsViewController.swift */,
 			);
 			path = ArtBookAppSwift2;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				DEB4A34F2B93379800945AC1 /* AppDelegate.swift in Sources */,
 				DEB4A3512B93379800945AC1 /* SceneDelegate.swift in Sources */,
 				DEB4A3592B93379800945AC1 /* ArtBookAppSwift2.xcdatamodeld in Sources */,
+				DEB4A3822B9338F900945AC1 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
